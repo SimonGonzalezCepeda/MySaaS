@@ -25,8 +25,7 @@ Route::get('/', function () {
 | kernel and includes session state, CSRF protection, and more.
 |
 */
-
 Route::group(['middleware' => ['web']], function () {
     //TODO routes que no s'han creat
-    Route::group('/plans', 'PlansController@index');
+    Route::get('/plans', 'PlansController@index');
 });
