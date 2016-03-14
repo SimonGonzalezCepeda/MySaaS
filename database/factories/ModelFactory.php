@@ -19,3 +19,13 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(Laravel\Cashier\Subscription::class, function (Faker\Generator $faker) {
+    return [
+        'stripe_id' => $faker->uuid,
+        'stripe_plan' => 'mounthly',
+        'name' => $faker->name,
+        'quantity' => 950,
+        'created_at' => Carbon::now()->addDat($faker->randomDigit)
+    ];
+});

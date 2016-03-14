@@ -27,6 +27,6 @@ class SaleReportsDailies extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('sale_reports_dailies');
     }
 }
