@@ -28,4 +28,6 @@ Route::get('/', function () {
 Route::group(['middleware' => ['web']], function () {
     //TODO routes que no s'han creat
     Route::get('/plans', 'PlansController@index');
+
+    Route::get('reports/dailySales', 'ReportsController@dailySales');
 });
