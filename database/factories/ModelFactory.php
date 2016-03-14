@@ -26,6 +26,6 @@ $factory->define(Laravel\Cashier\Subscription::class, function (Faker\Generator 
         'stripe_plan' => 'mounthly',
         'name' => $faker->name,
         'quantity' => 950,
-        'created_at' => Carbon::now()->addDat($faker->randomDigit)
+        'created_at' => Carbon::now()->addDat($faker->randomDigit(0,30))
     ];
 });

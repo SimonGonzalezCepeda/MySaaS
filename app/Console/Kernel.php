@@ -26,7 +26,7 @@ class Kernel extends ConsoleKernel
     {
         $schedule->call(function (){
             //TODO calcuar ventas diarias.
-        })->daily();
+        })->dailyAt('23:59');
 
         // $schedule->command('inspire')
         //          ->hourly();
