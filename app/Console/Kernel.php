@@ -24,6 +24,10 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
+        $schedule->call(function (){
+            //TODO calcuar ventas diarias.
+        })->daily();
+
         // $schedule->command('inspire')
         //          ->hourly();
     }
