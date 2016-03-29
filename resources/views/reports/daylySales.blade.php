@@ -21,15 +21,7 @@
                 strokeColor: "rgba(220,10,180,0.8)",
                 highlightFill: "rgba(40,20,200,0.75)",
                 highlightStroke: "rgba(22,20,20,1)",
-            },
-                {
-                    label: "My Second dataset",
-                    fillColor: "rgba(151,187,205,0.5)",
-                    strokeColor: "rgba(151,187,205,0.8)",
-                    highlightFill: "rgba(151,187,205,0.75)",
-                    highlightStroke: "rgba(151,187,205,1)",
-                    data: [280, 480, 400, 190, 860, 270, 900]
-                }]
+            }]
         }
         var myBarChart = new Chart(ctx).Bar(data);
     </script>
@@ -81,7 +73,7 @@
                     </div>
                     <div class="box-body">
                         <div class="chart">
-                            <canvas id="barChartDailySales" style="height: 261px; width: 622px;" width="622" height="261"></canvas>
+                            <graph></graph>
                         </div>
                     </div>
                     <!-- /.box-body -->
