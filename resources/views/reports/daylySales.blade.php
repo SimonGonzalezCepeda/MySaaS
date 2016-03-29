@@ -13,7 +13,7 @@
         })
         var ctx = document.getElementById("barChartDailySales").getContext("2d");
         var data = {
-            labels: ["1","2","3","4","5","6","7","8","9","10","11"],
+            labels: ["1","2","3","4","5","6","7","8","9","10","11"], //TODO make it to work with Json
             datasets: [{
                 data: [950, 1589, 1589, 2500, 3400, 456],
                 label: "My Daily Sales",
@@ -28,7 +28,7 @@
                     strokeColor: "rgba(151,187,205,0.8)",
                     highlightFill: "rgba(151,187,205,0.75)",
                     highlightStroke: "rgba(151,187,205,1)",
-                    data: [28, 48, 40, 19, 86, 27, 90]
+                    data: [280, 480, 400, 190, 860, 270, 900]
                 }]
         }
         var myBarChart = new Chart(ctx).Bar(data);
