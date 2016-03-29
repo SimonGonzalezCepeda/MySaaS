@@ -73,7 +73,9 @@
                     </div>
                     <div class="box-body">
                         <div class="chart">
-                            <graph></graph>
+                            <graph :labels="['day10,'day11','day12','day13']"
+                            :values="[56,34,23,120]">
+                            </graph>
                         </div>
                     </div>
                     <!-- /.box-body -->

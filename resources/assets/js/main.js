@@ -1,5 +1,4 @@
-import Chart from 'chart.js';
-import Vue from 'vue.js';
+import Vue from 'vue';
 import Graph from './components/Graph'
 
 //var ctx = document.getElementById("barChartDailySales").getContext("2d");
@@ -15,10 +14,10 @@ import Graph from './components/Graph'
 //    }]
 //}
 
-new Vue{
+new Vue({
     el: 'body',
         ready(){
         alert("Vue funciona!");
     },
     components: {Graph}
-}
+})
