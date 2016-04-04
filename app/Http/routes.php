@@ -29,5 +29,6 @@ Route::group(['middleware' => ['web']], function () {
     //TODO routes que no s'han creat
     Route::get('/plans', 'PlansController@index');
     Route::get('/downloadInvoice', 'PDFController@downloadInvoice');
+    Route::get('/invoice','PDFController@invoiceHtml');
     Route::get('reports/dailySales', 'ReportsController@dailySales');
 });
