@@ -4,7 +4,7 @@
 namespace App;
 
 
-class ProfileHTML extends AbstractProfiler implements Profile
+class ProfileHTML extends AbstractProfiler
 {
     public function show($user)
     {

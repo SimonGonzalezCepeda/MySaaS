@@ -4,7 +4,7 @@
 namespace App;
 
 
-class ProfileJson extends AbstractProfiler implements Profile
+class ProfileJson extends AbstractProfiler
 {
     public function show($user)
     {
@@ -13,6 +13,4 @@ class ProfileJson extends AbstractProfiler implements Profile
         Name: \" . $this->name . \"
         </JSON>";
     }
-
-
 }

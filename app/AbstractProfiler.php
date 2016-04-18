@@ -3,8 +3,7 @@
 
 namespace App;
 
-
-class AbstractProfiler
+abstract class AbstractProfiler implements Profile
 {
     protected function getUserId($user)
     {
