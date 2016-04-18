@@ -2,6 +2,10 @@
 
 namespace App\Providers;
 
+use App\Events\UserHasChanged;
+use App\Events\UserLoged;
+use App\Listeners\UserCacheForget;
+use App\Listeners\UserUpdateLastLogin;
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
@@ -13,8 +17,11 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'App\Events\SomeEvent' => [
-            'App\Listeners\EventListener',
+        UserLoged::class => [
+            UserUpdateLastLogin::class,
+        ],
+        UserHasChanged::class => [
+            UserCacheForget::class,
         ],
     ];
 

@@ -6,7 +6,7 @@ use App\Events\Event;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
-class UserLoged extends Event
+class UserHasChanged extends Event
 {
     use SerializesModels;
 
