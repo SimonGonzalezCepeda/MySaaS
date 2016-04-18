@@ -26,6 +26,6 @@ class UserUpdateLastLogin
      */
     public function handle(UserLoged $event)
     {
-        //
+        //id: $event->user->id
     }
 }

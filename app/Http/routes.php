@@ -31,4 +31,5 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/downloadInvoice', 'PDFController@downloadInvoice');
     Route::get('/invoice','PDFController@invoiceHtml');
     Route::get('reports/dailySales', 'ReportsController@dailySales');
+    Route::get('profile', 'ProfileController@show');
 });
