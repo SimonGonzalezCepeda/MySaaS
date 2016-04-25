@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+use App;
+use App\Profile;
+use App\ProfileHTML;
 use Illuminate\Support\ServiceProvider;
 
 class ProfileProvider extends ServiceProvider
@@ -23,6 +26,6 @@ class ProfileProvider extends ServiceProvider
      */
     public function register()
     {
-        app::bind(\App\Profile::class, \App\ProfileHTML::class);
+       App::bind(Profile::class, ProfileHTML::class);
     }
 }
